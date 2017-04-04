@@ -39,3 +39,20 @@ p{
 a{
 
 }
+
+/*-----------------------------------------------
+*     header
+------------------------------------------------*/
+
+.hero{
+  background-color: #3F51B5;
+  color: #FFF;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo{
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
