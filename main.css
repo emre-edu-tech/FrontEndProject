@@ -25,11 +25,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 ol{
-
-}
-
-li{
-
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 p{
@@ -47,12 +45,40 @@ a{
 .hero{
   background-color: #3F51B5;
   color: #FFF;
+  margin-bottom: 40px;
   padding: 20px 0;
   text-align: center;
 }
+
+/*-----------------------------------------------
+*     logo
+------------------------------------------------*/
 
 .logo{
   font-size: 36px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+/*-----------------------------------------------
+*     news
+------------------------------------------------*/
+.news-item{
+  border-bottom: 1px solid #B6B6B6;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.news-link{
+  color: #3F51B5;
+  font-size: 24px;
+}
+
+/*-----------------------------------------------
+*     Container
+------------------------------------------------*/
+
+.container{
+  margin: 0 auto;
+  max-width: 800px;
 }
