@@ -17,14 +17,18 @@
 *     Base
 ------------------------------------------------*/
 body{
-
+  color: #212121;
+  /* Lato must be in quotes because we are adding it */
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6{
 
 }
 
-ol{
+ol, ul{
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -35,7 +39,13 @@ p{
 }
 
 a{
+  color: #FF4081;
+}
 
+a:active,
+a:hover,
+a:focus{
+  color: #212121;
 }
 
 /*-----------------------------------------------
@@ -71,9 +81,15 @@ a{
 
 .news-link{
   color: #3F51B5;
+  display: block;
   font-size: 24px;
+  margin-bottom: 10px;
 }
 
+.news-meta-item{
+  display: inline;
+  margin-right: 15px;
+}
 /*-----------------------------------------------
 *     Container
 ------------------------------------------------*/
