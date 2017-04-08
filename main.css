@@ -40,6 +40,7 @@ p{
 
 a{
   color: #FF4081;
+  transition: 0.2s ease-in-out; 
 }
 
 a:active,
@@ -100,10 +101,43 @@ a:focus{
 }
 
 /*-----------------------------------------------
+*     Form
+------------------------------------------------*/
+
+.form{
+  height: 0; /* killing the space for the form */
+  margin-bottom: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  visibility: hidden;
+}
+
+.form-label{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-input{
+  border: 1px solid #B6B6B6;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+/*-----------------------------------------------
 *     States
 ------------------------------------------------*/
 .is-liked{
   animation: flash 2s;
+}
+
+.is-visible{
+  height: auto; /* regenerate form again */
+  opacity: 1;
+  visibility: visible;
 }
 
 /*-----------------------------------------------
